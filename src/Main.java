@@ -16,5 +16,18 @@ public class Main {
         lemonislemon.zwroc();
         lemonislemon.wypiszinfo();
 
+
+
+        czytelnik carrot = new czytelnik("carrot","rasberry",04);
+        czytelnik soup = new czytelnik("badSoup","goodSoup",05);
+
+
+        carrot.riseLiczbaWypozyczen();
+        carrot.wyswietlDane();
+        soup.riseLiczbaWypozyczen();
+        soup.riseLiczbaWypozyczen();
+        soup.riseLiczbaWypozyczen();
+        soup.wyswietlDane();
+
     }
 }
