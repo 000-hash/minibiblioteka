@@ -7,14 +7,14 @@ public class Main {
         Ksiazka lemonislemon = new Ksiazka("noMoreLemon", "lemonDisguise", 75, true);
 
 
-        harrypotter.wypiszinfo();
-        blueberry.wyporzycz();
-        blueberry.wypiszinfo();
-        lemonislemon.wypiszinfo();
-        lemonislemon.wyporzycz();
-        lemonislemon.wypiszinfo();
-        lemonislemon.zwroc();
-        lemonislemon.wypiszinfo();
+//        harrypotter.wypiszinfo();
+//        blueberry.wyporzycz();
+//        blueberry.wypiszinfo();
+//        lemonislemon.wypiszinfo();
+//        lemonislemon.wyporzycz();
+//        lemonislemon.wypiszinfo();
+//        lemonislemon.zwroc();
+//        lemonislemon.wypiszinfo();
 
 
 
@@ -22,12 +22,23 @@ public class Main {
         czytelnik soup = new czytelnik("badSoup","goodSoup",05);
 
 
-        carrot.riseLiczbaWypozyczen();
-        carrot.wyswietlDane();
-        soup.riseLiczbaWypozyczen();
-        soup.riseLiczbaWypozyczen();
-        soup.riseLiczbaWypozyczen();
-        soup.wyswietlDane();
+//        carrot.riseLiczbaWypozyczen();
+//        carrot.wyswietlDane();
+//        soup.riseLiczbaWypozyczen();
+//        soup.riseLiczbaWypozyczen();
+//        soup.riseLiczbaWypozyczen();
+//        soup.wyswietlDane();
+
+        Biblioteka biblioteka = new Biblioteka(10);
+        biblioteka.dodajKsiazke(harrypotter);
+        biblioteka.dodajKsiazke(blueberry);
+        biblioteka.dodajKsiazke(lemonislemon);
+        biblioteka.wypiszDostepneKsiazki();
+        System.out.println("Dostepe ksiazki: " +biblioteka.policzDostepneKsiazki());
+
+        biblioteka.wyswietlKsiazkePoTytule("Harry");
+
+
 
     }
 }

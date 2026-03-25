@@ -40,4 +40,11 @@ public class Ksiazka {
         }
 
     }
+    public String getTytul() {
+        return tytul;
+    }
+
+    public boolean czyDostepna() {
+        return dostepna;
+    }
 }
